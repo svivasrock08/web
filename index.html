@@ -1,6 +1,147 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8"> 
+        <title>SETG-Unipiloto</title>         
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link rel="stylesheet" href="css/bootstrap.css"> 
+        <link href='images/logo.png' rel='shortcut icon' type='image/png'>
+    </head>     
+    <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+ 
+        <div class="container"> 
+            <div class="page-header">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <a href="index.php"> <img src="images/logo.png" width="140" align="middle" /></a> 
+                        </div>
+                        <div class="col-md-3">
+                            <br></br>
+                            <h4 class="text-center">APLICATIVO DE SEGUIMIENTO DE TRABAJOS DE GRADO</h4> 
+                        </div>
+                        <div class="col-md-7">
+                            <br></br>
+                            <br>
+                             <nav class="navbar navbar-default" role="navigation"> 
+                                <!-- Brand and toggle get grouped for better mobile display -->                     
+                                <div class="navbar-header"> 
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> 
+                                        <span class="sr-only">Toggle navigation</span> 
+                                        <span class="icon-bar"></span> 
+                                        <span class="icon-bar"></span> 
+                                        <span class="icon-bar"></span> 
+                                    </button>                         
+                                    <a class="navbar-brand" href="index.php">Inicio</a> 
+                                </div>                     
+                                <!-- Collect the nav links, forms, and other content for toggling -->                     
+                                <div class="collapse navbar-collapse navbar-ex1-collapse"> 
+                                    <ul class="nav navbar-nav"> 
+                                        <li>
+                                            <a href="acerca.html">Acerca</a>
+                                        </li>         
+                                        <li>
+                                             <a href="login_adm.php">Ingresar</a>
+                                        </li>                                                  
+                                        <li class="active">
+                                            <a href="logout.php">Trabajos</a>
+                                        </li>                             
+                                    </ul>                         
+                                    <form class="navbar-form navbar-right" role="search"> 
+                                        <div class="form-group"> 
+                                            <input type="text" class="form-control" placeholder="Buscar"> 
+                                        </div>                             
+                                        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>                             
+                                    </form>                         
+                                </div>
+                                <!-- /.navbar-collapse -->                     
+                            </nav>      
+                        </div>
+                    </div>
+                </div>         
+            </div>            
+            <div id="carousel-id" class="carousel slide" data-ride="carousel"> 
+                <ol class="carousel-indicators"> 
+                    <li data-target="#carousel-id" data-slide-to="0" class="active"></li>                     
+                </ol>                 
+                <div class="carousel-inner"> 
+                    <div class="item active"> 
+                        <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide" src="images/1.png"> 
+                    </div>                     
+                </div>                 
+                <a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> 
+                <a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a> 
+            </div>             
+        </div>
+        <br></br>
+        <div class="panel panel-default">
+              <div class="panel-body">
+                <div class="row-fluid">
+                    <div class="col-md-2 text-center col-md-offset-2">
+                <h3>Administrador</h3>
+                <br></br>
+                <IMG SRC="images/Adm_ico.png" WIDTH=83 HEIGHT=87 ALT="Administrador"> 
+                <br></br>
+                <br></br>
+                <p>Si tienes un perfil administrador, aquí podrás gestionar los diferentes usuarios registrados en el sistema SETG-Unipiloto.</p>
+                <a href="login_adm.php">INGRESAR»</a> 
+                    </div>
+                    <div class="col-md-2 text-center col-md-offset-1">
+                <h3>Profesor</h3>
+                <br></br> 
+                <IMG SRC="images/Prof_ico.png" WIDTH=83 HEIGHT=87 ALT="Profesor">
+                <br></br>
+                <br></br>
+                <p>Docente: aquí puedes administrar los documentos de progreso de trabajo de grado y documentos finales de tus estudiantes. Así mismo, podrás asignar un proyecto a un estudiante, evidenciar su evolución, darlo por asignado, finalizado o cancelado.</p> 
+                <a href="login_prof.php">INGRESAR»</a>
+                    </div>
+                    <div class="col-md-2 text-center col-md-offset-1">
+                <h3>Usuario Común</h3> 
+                <br></br>
+                <IMG SRC="images/Est_ico.png" WIDTH=83 HEIGHT=87 ALT="Usuario Común">
+                <br></br>
+                <br></br>
+                <p>Estudiantes, invitados: aquí podrás visualizar y descargar todos los documentos de progreso de los trabajos de grado; así como su versión final. También, podrás observar las diferentes valoraciones por parte de los docentes y jurados. </p> 
+                <a href="buscar.html">¡EMPIEZA A BUSCAR!»</a>
+                    </div>
+                </div> 
+              </div>
+        </div>
+        <div class="panel-footer">
+            <font color="white">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <br>
+                            <a  href="http://www.unipiloto.edu.co" ><img src="images/LogoU.png" width=240 height=96></a>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <br>
+                            <br>
+                            <br>
+                            <a href="index.php">Home</a> |
+                            <a href="acerca.html">Acerca</a> | 
+                            <a href="buscar.html" target="_blank">Trabajos</a><br>
+                            © 2015 SETG Unipiloto TEAM
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="fb-page" data-href="https://www.facebook.com/setgupc" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/setgupc"><a href="https://www.facebook.com/setgupc">SETG-Unipiloto</a></blockquote></div></div>
+                         </div>
+                    </div>
+                </div>
+            </font>
+        </div>
+        <script src="js/jquery.js"></script>         
+        <script src="js/bootstrap.js"></script>         
+    
     
 
     
